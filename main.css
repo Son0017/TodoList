@@ -1,0 +1,182 @@
+:root {
+  --light-text: #494c6b;
+  --light-body-bg: #f2f2f2;
+  --light-list-bg: #ffffff;
+  --light-itemLeft: #9495a5;
+  --light-box-shadov: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  --light-input: #9495a5;
+}
+
+.modeEvent {
+  --light-text: #c8cbe7;
+  --light-body-bg: #171823;
+  --light-list-bg: #25273d;
+  --light-itemLeft: #5b5e7e;
+  --light-box-shadov: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+  --light-input: #767992;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: var(--light-body-bg);
+  transition: all 0.3s;
+}
+
+.containerBg {
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  height: 300px;
+  position: absolute;
+  background-image: url(./Bitmap.jpg);
+}
+
+.mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mode i {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+}
+
+.chekcbox {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e3e4f1;
+  border-radius: 100%;
+  background-color: var(--light-list-bg);
+  background-position: center;
+  cursor: pointer;
+}
+
+.clickedcheakbox {
+  background: url(./Group.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.clickedText {
+  text-decoration: line-through;
+}
+
+.label {
+  background-color: var(--light-list-bg);
+  border-radius: 5px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--light-box-shadov);
+  margin-bottom: 24px;
+}
+
+h1 {
+  color: white;
+}
+
+input {
+  margin-left: 24px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  background: inherit;
+  color: var(--light-input);
+}
+
+.aboutList {
+  background-color: var(--light-list-bg);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 20px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: var(--light-box-shadov);
+}
+
+.wrapper {
+  display: flex;
+}
+
+.choosed {
+  display: flex;
+  gap: 15px;
+  margin-right: 56px;
+}
+
+.todoList {
+  border-radius: 5px 5px 0 0;
+  box-shadow: var(--light-box-shadov);
+}
+
+.listStyle {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  background-color: var(--light-list-bg);
+  padding: 23px;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #e3e4f1;
+}
+
+a {
+  cursor: pointer;
+}
+
+.textStyle {
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height */
+  width: 100%;
+  cursor: pointer;
+  letter-spacing: -0.25px;
+  color: var(--light-text);
+}
+
+.delete {
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.listStyle:hover .delete {
+  opacity: 1;
+}
+
+.wrapper a {
+  color: var(--light-text);
+}
+.wrapper a:hover {
+  color: orangered;
+}
+
+.itemLeft {
+  color: var(--light-itemLeft);
+}/*# sourceMappingURL=main.css.map */
